@@ -21,56 +21,62 @@
 	<body onload="enableDesignMode()">
 		<div id="container">
 			<h2>Simple Rich Text Editor</h2>
-			<div id="other_options">
-				<select onchange="changeToWithValue('fontSize', this.value)">
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-				</select>
-				<b>Fore Color:</b>
-				<input
-					type="color"
-					onchange="changeToWithValue('foreColor', this.value)"
-				/>
-				<b>Background:</b>
-				<input
-					type="color"
-					onchange="changeToWithValue('hiliteColor', this.value)"
-				/>
-				<button class="name_button" onclick="changeTo('SelectAll')">
-					Select All
-				</button>
-				<select onchange="changeToWithValue('formatBlock', this.value)">
-					<option value="H1">H1</option>
-					<option value="H2">H2</option>
-					<option value="H3">H3</option>
-					<option value="H4">H4</option>
-					<option value="H5">H5</option>
-					<option value="H6">H6</option>
-				</select>
-				<button
-					class="name_button"
-					onclick="changeTo('insertHorizontalRule')"
-				>
-					HR
-				</button>
-				<button class="name_button" onclick="toggleEdit()">
-					Toggle Edit
-				</button>
-				<select onchange="changeToWithValue('fontName', this.value)">
-					<option value="Arial">Arial</option>
-					<option value="Times New Roman">Times New Roman</option>
-					<option value="Courier">Courier</option>
-					<option value="Comic Sans MS">Comic Sans MS</option>
-					<option value="Tahoma">Tahoma</option>
-					<option value="Georgia">Georgia</option>
-				</select>
-			</div>
 			<div id="content">
+				<div id="other_options">
+					<select
+						onchange="changeToWithValue('fontSize', this.value)"
+					>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+					</select>
+					<b>Fore Color:</b>
+					<input
+						type="color"
+						onchange="changeToWithValue('foreColor', this.value)"
+					/>
+					<b>Background:</b>
+					<input
+						type="color"
+						onchange="changeToWithValue('hiliteColor', this.value)"
+					/>
+					<button class="name_button" onclick="changeTo('SelectAll')">
+						Select All
+					</button>
+					<select
+						onchange="changeToWithValue('formatBlock', this.value)"
+					>
+						<option value="H1">H1</option>
+						<option value="H2">H2</option>
+						<option value="H3">H3</option>
+						<option value="H4">H4</option>
+						<option value="H5">H5</option>
+						<option value="H6">H6</option>
+					</select>
+					<button
+						class="name_button"
+						onclick="changeTo('insertHorizontalRule')"
+					>
+						HR
+					</button>
+					<button class="name_button" onclick="toggleEdit()">
+						Toggle Edit
+					</button>
+					<select
+						onchange="changeToWithValue('fontName', this.value)"
+					>
+						<option value="Arial">Arial</option>
+						<option value="Times New Roman">Times New Roman</option>
+						<option value="Courier">Courier</option>
+						<option value="Comic Sans MS">Comic Sans MS</option>
+						<option value="Tahoma">Tahoma</option>
+						<option value="Georgia">Georgia</option>
+					</select>
+				</div>
 				<div id="buttons_edit">
 					<button onclick="changeTo('bold')">
 						<i class="fas fa-bold"></i>
